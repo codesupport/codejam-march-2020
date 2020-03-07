@@ -1,4 +1,12 @@
-# CodeSupport Code Jam - March 2020
+# CodeSupport Code Jam: 14 - 15 March 2020
+
+## Overview
+- A random noun, verb and adjective will be generated on <https://randomwordgenerator.com>
+- These words are the theme - your entry must incorporate them in some way.
+- Your submission must be open source
+- A pull request into this repository must be made by the deadline for your entry to count
+- Feel free to make whatever you wish - as long as it is appropriate
+- The winner will be chosen by the community
 
 ## Submitting Your Entry
 1. Fork this repository

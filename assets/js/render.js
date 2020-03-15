@@ -59,17 +59,18 @@ import {OrbitControls} from "./three/OrbitControls.js";
 
 	const dotGeometry = new THREE.Geometry();
 	const dotMaterial = new THREE.PointsMaterial({size:1, sizeAttenuation:false});
+	const dots = new THREE.Points(dotGeometry, dotMaterial);
 
+	// Create a ton of "star" dots
 	for(let i = 0; i < 1900; i++){
 		dotGeometry.vertices.push(new THREE.Vector3(getRandomNumber(-1000, 1000),  getRandomNumber(-700, 700), getRandomNumber(-1000, 1000)));
 	}
 
-	const dots = new THREE.Points(dotGeometry, dotMaterial);
-
+	// Add items to scene
 	scene.add(dots);
 	scene.add(ambientLight);
 	scene.add(skybox);
-	
+
 	container.appendChild(renderer.domElement);
 
 	function getRandomNumber(min, max){

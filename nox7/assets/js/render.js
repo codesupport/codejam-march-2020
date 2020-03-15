@@ -84,7 +84,7 @@ import RoundedBox from "./_rounded-box.js";
 
 	// Add the text
 	const fontLoader = new THREE.FontLoader();
-	fontLoader.load("../assets/fonts/helvetiker_bold.typeface.json", (font) => {
+	fontLoader.load("./assets/fonts/helvetiker_bold.typeface.json", (font) => {
 		const textGeometry = new THREE.TextGeometry("CodeSupport", {
 			font:font,
 			size:"20",

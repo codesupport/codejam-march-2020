@@ -1,14 +1,7 @@
 import {OrbitControls} from "./three/OrbitControls.js";
- 
-if (window.location.host.includes("github")){
-	import("./assets/js/rounded-box.js").then( RoundedBoxModule => {
-		init(RoundedBoxModule.RoundedBox);
-	});
-}else{
-	import("./rounded-box.js").then( RoundedBoxModule => {
-		init(RoundedBoxModule.RoundedBox);
-	});
-}
+import("./rounded-box.js").then( RoundedBoxModule => {
+	init(RoundedBoxModule.RoundedBox);
+});
 
 
 function init(RoundedBox){

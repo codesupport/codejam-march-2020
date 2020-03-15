@@ -1,7 +1,17 @@
 import {OrbitControls} from "./three/OrbitControls.js";
-import RoundedBox from "./_rounded-box.js";
 
-(() => {
+if (window.location.host.includes("github")){
+	import("./assets/js/_rounded-box.js").then( RoundedBoxModule => {
+		init(RoundedBoxModule.RoundedBox);
+	});
+}else{
+	import("./_rounded-box.js").then( RoundedBoxModule => {
+		init(RoundedBoxModule.RoundedBox);
+	});
+}
+
+
+function init(RoundedBox){
 	const scene = new THREE.Scene;
 	const container = document.querySelector("#render-window");
 	const camera = new THREE.PerspectiveCamera(55, container.clientWidth/container.clientHeight, 0.1, 30000);
@@ -123,4 +133,4 @@ import RoundedBox from "./_rounded-box.js";
 		renderer.render(scene, camera);
 		// requestAnimationFrame(renderer);
 	});
-})();
+}

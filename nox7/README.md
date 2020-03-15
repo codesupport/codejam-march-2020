@@ -8,6 +8,8 @@ This entry is a simple web application using WebGL 3D rendering to render a pict
 
 Do not attempt to view the index.html file without a web server - the web application will not work.
 
+You can view a live preview using GitHub Pages: https://nox7.github.io/codejam-march-2020/nox7/
+
 ## When Viewing
 
 Use your mouse to control the camera. Zoom, right-click, and left-click.

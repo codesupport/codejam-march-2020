@@ -24,8 +24,7 @@ import {OrbitControls} from "./three/OrbitControls.js";
 
 	const controls = new OrbitControls(camera, renderer.domElement);
 
-
-
+	// Load textures and add them to an array of mesh materials
 	const textureLoader = new THREE.TextureLoader();
 	const materialArray = [
 		new THREE.MeshBasicMaterial({
@@ -54,6 +53,7 @@ import {OrbitControls} from "./three/OrbitControls.js";
 		})
 	];
 
+	// Create skybox geometry and the mesh itself with applied geometry and materials
 	const skyboxGeometry = new THREE.BoxGeometry(10000,10000,10000);
 	const skybox = new THREE.Mesh(skyboxGeometry, materialArray);
 

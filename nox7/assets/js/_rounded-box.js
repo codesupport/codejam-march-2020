@@ -20,9 +20,9 @@ class RoundedBox{
 		});
 
 		geometry.center();
-		
+
 		this.geometry = geometry;
 	}
 }
 
-export default RoundedBox;
+export {RoundedBox};
